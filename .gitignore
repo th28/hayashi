@@ -3,3 +3,7 @@
 /workspace.xml
 config.py
 *.png
+venv
+.idea
+__pycache__
+inspectionProfiles
