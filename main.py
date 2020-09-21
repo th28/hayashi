@@ -31,7 +31,7 @@ def main():
     df.set_index('date',inplace=True)
 
     ax = df.plot()
-    ax.axhline(y=8, color='r', linestyle='--')
+    ax.axhline(y=25, color='r', linestyle='--')
     ax.set_title('Cases per 100,000 (past 2 weeks) as of '+ today + ': ' + str(df.iloc[0].values[0]) )
     ax.set_xlabel(" ")
     ax.set_ylabel('Cases per 100,000 (past 2 weeks)')
@@ -39,7 +39,7 @@ def main():
     fig.savefig('jpn_covid_' + today + '.png',dpi=300)
 
     txt = (" COVID-19 cases per 100,000 people were recorded in Japan in the past 14 days."
-    " The Finnish government permits leisure travel between Finland and Japan when this number is below 8.")
+    " The Finnish government permits leisure travel between Finland and Japan when this number is below 25.")
 
     comment = 'As of today ' + str(df.iloc[0].values[0]) + txt
 
